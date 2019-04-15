@@ -9,18 +9,14 @@ def binary_search(list, number):
 			high = mid - 1
 		elif list[mid] < number:
 			low = mid + 1
-	return -1
+	return None
 
 
-def make_list(list, max):
-	for i in range(1,max+1):
-		list.append(i)
-	return list
+def make_list(max):
+	return list(range(1, max))
 
-list1 = []
-list2 = []
-list1 = make_list(list1, 10)
-list2 = make_list(list2, 15)
+list1 = make_list(10)
+list2 = make_list(15)
 print(list2)
 list2[4] = 4.5
 print(list2)
